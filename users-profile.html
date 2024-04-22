@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>PayBiz</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <!-- =======================================================
+  * Template Name: NiceAdmin
+  * Updated: Jan 29 2024 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="emp-master.html" class="logo d-flex align-items-center">
+          <img src="assets/img/logo.png" alt="" />
+          <span class="d-none d-lg-block">PayBiz</span>
+        </a>
+        <i class="bi bi-list toggle-sidebar-btn"></i>
+      </div>
+      <!-- End Logo -->
+
+      <div class="search-bar">
+        <form
+          class="search-form d-flex align-items-center"
+          method="POST"
+          action="#"
+        >
+          <input
+            type="text"
+            name="query"
+            placeholder="Search"
+            title="Enter search keyword"
+          />
+          <button type="submit" title="Search">
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+      </div>
+      <!-- End Search Bar -->
+
+      <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link nav-icon search-bar-toggle" href="#">
+              <i class="bi bi-search"></i>
+            </a>
+          </li>
+          <!-- End Search Icon-->
+
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+              <i class="bi bi-bell"></i>
+              <span class="badge bg-primary badge-number">4</span> </a
+            >
+
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications"
+            >
+              <li class="dropdown-header">
+                You have 4 new notifications
+                <a href="#"
+                  ><span class="badge rounded-pill bg-primary p-2 ms-2"
+                    >View all</span
+                  ></a
+                >
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-exclamation-circle text-warning"></i>
+                <div>
+                  <h4>Lorem Ipsum</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>30 min. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-x-circle text-danger"></i>
+                <div>
+                  <h4>Atque rerum nesciunt</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>1 hr. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-check-circle text-success"></i>
+                <div>
+                  <h4>Sit rerum fuga</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>2 hrs. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-info-circle text-primary"></i>
+                <div>
+                  <h4>Dicta reprehenderit</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>4 hrs. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li class="dropdown-footer">
+                <a href="#">Show all notifications</a>
+              </li>
+            </ul>
+          </li> -->
+
+          <li class="nav-item dropdown pe-3">
+            <a
+              class="nav-link nav-profile d-flex align-items-center pe-0"
+              href="#"
+              data-bs-toggle="dropdown"
+            >
+              <img
+                src="assets/img/profile-img.jpg"
+                alt="Profile"
+                class="rounded-circle"
+              />
+              <span
+                class="d-none d-md-block dropdown-toggle ps-2 nameChange"
+              ></span> </a
+            ><!-- End Profile Iamge Icon -->
+
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile"
+            >
+              <li class="dropdown-header">
+                <h6 class="nameChangeTwo">Jenil</h6>
+                <span class="desgChange">Intern</span>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="users-profile.html"
+                >
+                  <i class="bi bi-person"></i>
+                  <span>My Profile</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="users-profile.html"
+                >
+                  <i class="bi bi-gear"></i>
+                  <span>Account Settings</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="pages-help.html"
+                  target="_blank"
+                >
+                  <i class="bi bi-question-circle"></i>
+                  <span>Need Help?</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <i class="bi bi-box-arrow-right"></i>
+                  <span>Log Out</span>
+                </a>
+              </li>
+            </ul>
+            <!-- End Profile Dropdown Items -->
+          </li>
+          <!-- End Profile Nav -->
+        </ul>
+      </nav>
+      <!-- End Icons Navigation -->
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+      <ul class="sidebar-nav" id="sidebar-nav">
+        <!-- <li class="nav-item">
+          <a class="nav-link collapsed" href="index.html">
+            <i class="bi bi-grid"></i>
+            <span>Dashboard</span>
+          </a>
+        </li> -->
+        <!-- End Dashboard Nav -->
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="emp-master.html">
+            <i class="bi bi-card-list"></i>
+            <span>Employee Master</span>
+          </a>
+        </li>
+        <!-- Employee Master -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="ctc-master.html">
+            <i class="bi bi-card-list"></i>
+            <span>CTC Master</span>
+          </a>
+        </li>
+        <!-- CTC Master -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="attendance-master.html">
+            <i class="bi bi-card-list"></i>
+            <span>Attendance Master</span>
+          </a>
+        </li>
+        <!-- Attendance Master -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="payroll-master.html">
+            <i class="bi bi-card-list"></i>
+            <span>Payroll Master</span>
+          </a>
+        </li>
+        <!-- Payroll Master -->
+        <!-- <li class="nav-item">
+          <a class="nav-link collapsed" href="year-master.html">
+            <i class="bi bi-card-list"></i>
+            <span>Year Master</span>
+          </a>
+        </li> -->
+        <!-- Year Master -->
+
+        <li class="nav-heading">Pages</li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="users-profile.html">
+            <i class="bi bi-person"></i>
+            <span>Profile</span>
+          </a>
+        </li>
+        <!-- End Profile Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="pages-register.html">
+            <i class="bi bi-card-list"></i>
+            <span>Register</span>
+          </a>
+        </li>
+        <!-- End Register Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="pages-login.html">
+            <i class="bi bi-box-arrow-in-right"></i>
+            <span>Login</span>
+          </a>
+        </li>
+        <!-- End Login Page Nav -->
+      </ul>
+    </aside>
+    <!-- End Sidebar-->
+
+    <main id="main" class="main">
+      <div class="pagetitle">
+        <h1>Profile</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item">Users</li>
+            <li class="breadcrumb-item active">Profile</li>
+          </ol>
+        </nav>
+      </div>
+      <!-- End Page Title -->
+
+      <section class="section profile">
+        <div class="row">
+          <div class="col-xl-4">
+            <div class="card">
+              <div
+                class="card-body profile-card pt-4 d-flex flex-column align-items-center"
+              >
+                <img
+                  src="assets/img/profile-img.jpg"
+                  class="rounded-circle"
+                  class="displayImg"
+                />
+                <h2 class="displayName"></h2>
+              </div>
+            </div>
+            <div class="text-center">
+              <button
+                type="submit"
+                class="btn btn-danger"
+                id="signOutButton"
+                style="margin-bottom: 20px"
+              >
+                Log Out
+              </button>
+            </div>
+          </div>
+
+          <div class="col-xl-8">
+            <div class="card">
+              <div class="card-body pt-3">
+                <!-- Bordered Tabs -->
+                <ul class="nav nav-tabs nav-tabs-bordered">
+                  <li class="nav-item">
+                    <button
+                      class="nav-link active"
+                      data-bs-toggle="tab"
+                      data-bs-target="#profile-overview"
+                    >
+                      Overview
+                    </button>
+                  </li>
+
+                  <li class="nav-item">
+                    <button
+                      class="nav-link"
+                      data-bs-toggle="tab"
+                      data-bs-target="#profile-edit"
+                    >
+                      Edit Profile
+                    </button>
+                  </li>
+
+                  <li class="nav-item">
+                    <button
+                      class="nav-link"
+                      data-bs-toggle="tab"
+                      data-bs-target="#profile-change-password"
+                    >
+                      Change Password
+                    </button>
+                  </li>
+                </ul>
+                <div class="tab-content pt-2">
+                  <div
+                    class="tab-pane fade show active profile-overview"
+                    id="profile-overview"
+                  >
+                    <h5 class="card-title">Profile Details</h5>
+
+                    <div class="row">
+                      <div class="col-lg-3 col-md-4 label">Emp Code</div>
+                      <div class="col-lg-9 col-md-8 changeEmpCode"></div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-lg-3 col-md-4 label">Full Name</div>
+                      <div class="col-lg-9 col-md-8 changeName"></div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-lg-3 col-md-4 label">Company</div>
+                      <div class="col-lg-9 col-md-8 changeCompany"></div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-lg-3 col-md-4 label">Department</div>
+                      <div class="col-lg-9 col-md-8 changeDept"></div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-lg-3 col-md-4 label">Designation</div>
+                      <div class="col-lg-9 col-md-8 changeDesg"></div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-lg-3 col-md-4 label">Phone</div>
+                      <div class="col-lg-9 col-md-8 changePhone"></div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-lg-3 col-md-4 label">Email</div>
+                      <div class="col-lg-9 col-md-8 changeEmail"></div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="tab-pane fade profile-edit pt-3"
+                    id="profile-edit"
+                  >
+                    <!-- Profile Edit Form -->
+                    <form>
+                      <!-- <div class="row mb-3">
+                        <label
+                          for="profileImage"
+                          class="col-md-4 col-lg-3 col-form-label"
+                          >Profile Image</label
+                        >
+                        <div class="col-md-8 col-lg-9">
+                          <img src="" class="editImg" />
+                          <div class="pt-2">
+                            <button
+                              class="btn btn-primary btn-sm uploadImg"
+                              title="Upload new profile image"
+                            >
+                              <i class="bi bi-upload"></i>
+                            </button>
+                            <button
+                              class="btn btn-danger btn-sm deleteImg"
+                              title="Remove my profile image"
+                            >
+                              <i class="bi bi-trash"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div> -->
+
+                      <div class="row mb-3">
+                        <label
+                          for="editEmpCode"
+                          class="col-md-4 col-lg-3 col-form-label"
+                          >Emp Code</label
+                        >
+                        <div class="col-md-8 col-lg-9">
+                          <input
+                            name="empCode"
+                            type="number"
+                            class="form-control"
+                            id="editEmpCode"
+                            value=""
+                            readonly
+                          />
+                        </div>
+                      </div>
+
+                      <div class="row mb-3">
+                        <label
+                          for="editName"
+                          class="col-md-4 col-lg-3 col-form-label"
+                          >Full Name</label
+                        >
+                        <div class="col-md-8 col-lg-9">
+                          <input
+                            name="fullName"
+                            type="text"
+                            class="form-control"
+                            id="editName"
+                            value=""
+                          />
+                        </div>
+                      </div>
+
+                      <div class="row mb-3">
+                        <label
+                          for="editCompany"
+                          class="col-md-4 col-lg-3 col-form-label"
+                          >Company</label
+                        >
+                        <div class="col-md-8 col-lg-9">
+                          <input
+                            name="company"
+                            type="text"
+                            class="form-control"
+                            id="editCompany"
+                            value=""
+                          />
+                        </div>
+                      </div>
+
+                      <div class="row mb-3">
+                        <label
+                          for="editDept"
+                          class="col-md-4 col-lg-3 col-form-label"
+                          >Department</label
+                        >
+                        <div class="col-md-8 col-lg-9">
+                          <input
+                            name="department"
+                            type="text"
+                            class="form-control"
+                            id="editDept"
+                            value=""
+                          />
+                        </div>
+                      </div>
+
+                      <div class="row mb-3">
+                        <label
+                          for="editDesg"
+                          class="col-md-4 col-lg-3 col-form-label"
+                          >Designation</label
+                        >
+                        <div class="col-md-8 col-lg-9">
+                          <input
+                            name="designation"
+                            type="text"
+                            class="form-control"
+                            id="editDesg"
+                            value=""
+                          />
+                        </div>
+                      </div>
+
+                      <div class="row mb-3">
+                        <label
+                          for="editPhone"
+                          class="col-md-4 col-lg-3 col-form-label"
+                          >Phone</label
+                        >
+                        <div class="col-md-8 col-lg-9">
+                          <input
+                            name="phone"
+                            type="number"
+                            class="form-control"
+                            id="editPhone"
+                            value=""
+                          />
+                        </div>
+                      </div>
+
+                      <div class="row mb-3">
+                        <label
+                          for="editEmail"
+                          class="col-md-4 col-lg-3 col-form-label"
+                          >Email</label
+                        >
+                        <div class="col-md-8 col-lg-9">
+                          <input
+                            name="email"
+                            type="email"
+                            class="form-control"
+                            id="editEmail"
+                            value=""
+                          />
+                        </div>
+                      </div>
+
+                      <div class="text-center">
+                        <button
+                          type="submit"
+                          class="btn btn-primary"
+                          id="saveChangesBtn"
+                        >
+                          Save Changes
+                        </button>
+                      </div>
+                      <div
+                        id="success-message"
+                        class="alert alert-success p-2 text-center"
+                        role="alert"
+                        style="margin-top: 20px"
+                      ></div>
+                    </form>
+                    <!-- End Profile Edit Form -->
+                  </div>
+
+                  <div class="tab-pane fade pt-3" id="profile-change-password">
+                    <!-- Change Password Form -->
+                    <form id="change-pass">
+                      <div class="row mb-3">
+                        <label
+                          for="currentPassword"
+                          class="col-md-4 col-lg-3 col-form-label"
+                          >Current Password</label
+                        >
+                        <div class="col-md-8 col-lg-9">
+                          <input
+                            name="password"
+                            type="password"
+                            class="form-control"
+                            id="currentPassword"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="row mb-3">
+                        <label
+                          for="newPassword"
+                          class="col-md-4 col-lg-3 col-form-label"
+                          >New Password</label
+                        >
+                        <div class="col-md-8 col-lg-9">
+                          <input
+                            name="newpassword"
+                            type="password"
+                            class="form-control"
+                            id="newPassword"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="row mb-3">
+                        <label
+                          for="renewPassword"
+                          class="col-md-4 col-lg-3 col-form-label"
+                          >Re-enter New Password</label
+                        >
+                        <div class="col-md-8 col-lg-9">
+                          <input
+                            name="renewpassword"
+                            type="password"
+                            class="form-control"
+                            id="renewPassword"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="text-center">
+                        <button
+                          type="submit"
+                          class="btn btn-primary"
+                          id="changePassBtn"
+                        >
+                          Change Password
+                        </button>
+                      </div>
+                      <div
+                        id="success-message-two"
+                        class="alert alert-success p-2 text-center"
+                        role="alert"
+                        style="margin-top: 20px"
+                      ></div>
+                    </form>
+                    <!-- End Change Password Form -->
+                  </div>
+                </div>
+                <!-- End Bordered Tabs -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+      <div class="copyright">
+        &copy; Copyright <strong><span>PayBiz</span></strong
+        >. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <script type="module">
+      // Retrieve empCode from local storage
+      const empCode = localStorage.getItem("empCode");
+
+      if (!empCode) {
+        console.error("No empCode found in local storage.");
+      }
+
+      // Initialize Firebase app and get a reference to the database
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+      import {
+        getAuth,
+        signOut,
+        signInWithEmailAndPassword,
+        updatePassword,
+      } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
+      import {
+        getDatabase,
+        ref,
+        get,
+        update,
+      } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js";
+
+      import firebaseConfig from "./firebaseConfig.js";
+
+      const app = initializeApp(firebaseConfig);
+      const db = getDatabase(app);
+
+      // Function to populate user data into fields
+      function populateUserData(userData) {
+        document.querySelector(".displayName").innerText = userData.name || "";
+        document.querySelector(".changeEmpCode").innerText =
+          userData.empCode || "";
+        document.querySelector(".changeName").innerText = userData.name || "";
+        document.querySelector(".changeCompany").innerText =
+          userData.company || "";
+        document.querySelector(".changeDept").innerText = userData.dept || "";
+        document.querySelector(".changeDesg").innerText = userData.desg || "";
+        document.querySelector(".changePhone").innerText =
+          userData.phoneNum || "";
+        document.querySelector(".changeEmail").innerText = userData.email || "";
+
+        document.querySelector("#editEmpCode").value = userData.empCode;
+        document.querySelector("#editName").value = userData.name || "";
+        document.querySelector("#editCompany").value = userData.company || "";
+        document.querySelector("#editDept").value = userData.dept || "";
+        document.querySelector("#editDesg").value = userData.desg || "";
+        document.querySelector("#editPhone").value = userData.phoneNum || "";
+        document.querySelector("#editEmail").value = userData.email || "";
+
+        document.querySelector(".nameChange").textContent = userData.name;
+        document.querySelector(".nameChangeTwo").textContent = userData.name;
+        document.querySelector(".desgChange").textContent = userData.desg;
+
+        // Save user data to local storage
+        localStorage.setItem(`userData_${empCode}`, JSON.stringify(userData));
+      }
+
+      // Retrieve user data from the database or local storage
+      function fetchUserData() {
+        // Check if user data is available in local storage
+        const cachedUserData = localStorage.getItem(`userData_${empCode}`);
+        if (cachedUserData) {
+          const userData = JSON.parse(cachedUserData);
+          populateUserData(userData);
+        } else {
+          // If no data in local storage, fetch from the database
+          const registerRef = ref(db, `register/${empCode}`);
+          get(registerRef)
+            .then((snapshot) => {
+              const userData = snapshot.val();
+              if (userData) {
+                populateUserData(userData);
+              } else {
+                console.error("User data not found for empCode:", empCode);
+              }
+            })
+            .catch((error) => {
+              console.error("Error fetching user data:", error);
+            });
+        }
+      }
+
+      // Function to handle user sign out
+      function signOutUser() {
+        const auth = getAuth();
+
+        // Sign out the user using Firebase's signOut method
+        signOut(auth)
+          .then(() => {
+            // Successfully signed out
+
+            // Clear empCode from local storage
+            localStorage.removeItem("empCode");
+
+            // Redirect the user to the login page
+            window.location.href = "pages-login.html";
+          })
+          .catch((error) => {
+            // Handle any errors that may occur during the sign-out process
+            console.error("Error signing out:", error);
+          });
+      }
+      // Attach the signOutUser function to a button or link in your application
+      document
+        .getElementById("signOutButton")
+        .addEventListener("click", signOutUser);
+
+      // Function to handle saving changes in the edit profile form
+      function handleSaveChanges(event) {
+        // Prevent the form from submitting normally
+        event.preventDefault();
+
+        // Retrieve the new values from the form inputs
+        const empCode = document.querySelector("#editEmpCode").value;
+        const name = document.querySelector("#editName").value;
+        const company = document.querySelector("#editCompany").value;
+        const department = document.querySelector("#editDept").value;
+        const designation = document.querySelector("#editDesg").value;
+        const phone = document.querySelector("#editPhone").value;
+        const email = document.querySelector("#editEmail").value;
+
+        // Get a reference to the user's data in Firebase
+        const userRef = ref(db, `register/${empCode}`);
+
+        // Update the user data in Firebase
+        update(userRef, {
+          name,
+          company,
+          dept: department,
+          desg: designation,
+          phoneNum: phone,
+          email,
+        })
+          .then(() => {
+            //Show Alert Message(5)
+            document.querySelector("#success-message").textContent =
+              "Profile Updated Successfully";
+            document.querySelector("#success-message").style.display = "block";
+            //Hide Alert Message After Seven Seconds(4)
+            setTimeout(function () {
+              document.querySelector("#success-message").style.display = "none";
+              document.querySelector("#success-message").textContent = "";
+            }, 3000);
+
+            // After successfully updating the data, re-fetch the user data from Firebase
+            return get(userRef);
+          })
+          .then((snapshot) => {
+            const userData = snapshot.val();
+            if (userData) {
+              populateUserData(userData);
+            } else {
+              console.error("User data not found for empCode:", empCode);
+            }
+          })
+          .catch((error) => {
+            console.error("Error updating user data:", error);
+          });
+      }
+      // Attach the event listener to the "Save Changes" button
+      document
+        .getElementById("saveChangesBtn")
+        .addEventListener("click", handleSaveChanges);
+
+      // Function to handle changing password
+      function handleChangePassword(event) {
+        // Prevent the form from submitting normally
+        event.preventDefault();
+
+        // Get the input values from the form
+        const currentPassword =
+          document.querySelector("#currentPassword").value;
+        const newPassword = document.querySelector("#newPassword").value;
+        const renewPassword = document.querySelector("#renewPassword").value;
+
+        // Validate that the new passwords match
+        if (newPassword !== renewPassword) {
+          console.error("New passwords do not match");
+          alert("New passwords do not match");
+          return;
+        }
+
+        // Use the empCode from local storage to fetch the user's email and current password from Firebase
+        const empCode = localStorage.getItem("empCode");
+        const registerRef = ref(db, `register/${empCode}`);
+
+        // Fetch the user's email and current password from Firebase
+        get(registerRef)
+          .then((snapshot) => {
+            const userData = snapshot.val();
+            if (userData) {
+              const userEmail = userData.email;
+              const storedCurrentPassword = userData.password; // Assuming password is stored in Firebase
+
+              // Authenticate the user with the fetched email and entered current password
+              const auth = getAuth();
+              signInWithEmailAndPassword(auth, userEmail, currentPassword)
+                .then((userCredential) => {
+                  // User authenticated successfully, update the password
+                  const user = userCredential.user;
+                  updatePassword(user, newPassword)
+                    .then(() => {
+                      // Password updated successfully
+                      console.log("Password changed successfully");
+                      // Update the password in the Firebase Realtime Database
+                      update(registerRef, { password: newPassword });
+
+                      //Show Alert Message(5)
+                      document.querySelector(
+                        "#success-message-two"
+                      ).textContent = "Password Updated Successfully";
+                      document.querySelector(
+                        "#success-message-two"
+                      ).style.display = "block";
+                      //Hide Alert Message After Seven Seconds(4)
+                      setTimeout(function () {
+                        document.querySelector(
+                          "#success-message-two"
+                        ).style.display = "none";
+                        document.querySelector(
+                          "#success-message-two"
+                        ).textContent = "";
+                      }, 3000);
+                    })
+                    .then(() => {
+                      document.querySelector("#change-pass").reset();
+                    })
+                    .catch((error) => {
+                      console.error("Error updating password:", error);
+                      alert("Error updating password: " + error.message);
+                    });
+                })
+                .catch((error) => {
+                  console.error("Authentication failed:", error);
+                  alert("Authentication failed: " + error.message);
+                });
+            } else {
+              console.error("User data not found for empCode:", empCode);
+            }
+          })
+          .catch((error) => {
+            console.error("Error fetching user data:", error);
+          });
+      }
+
+      // Attach the event listener to the "Change Password" button
+      document
+        .querySelector("#changePassBtn")
+        .addEventListener("click", handleChangePassword);
+
+      // Fetch user data on page load
+      document.addEventListener("DOMContentLoaded", fetchUserData);
+    </script>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/chart.js/chart.umd.js"></script>
+    <script src="assets/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/vendor/quill/quill.min.js"></script>
+    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

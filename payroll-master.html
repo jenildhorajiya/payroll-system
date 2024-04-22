@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>PayBiz</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <!-- =======================================================
+  * Template Name: NiceAdmin
+  * Updated: Jan 29 2024 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="emp-master.html" class="logo d-flex align-items-center">
+          <img src="assets/img/logo.png" alt="" />
+          <span class="d-none d-lg-block">PayBiz</span>
+        </a>
+        <i class="bi bi-list toggle-sidebar-btn"></i>
+      </div>
+      <!-- End Logo -->
+
+      <div class="search-bar">
+        <form
+          class="search-form d-flex align-items-center"
+          method="POST"
+          action="#"
+        >
+          <input
+            type="text"
+            name="query"
+            placeholder="Search"
+            title="Enter search keyword"
+          />
+          <button type="submit" title="Search">
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+      </div>
+      <!-- End Search Bar -->
+
+      <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link nav-icon search-bar-toggle" href="#">
+              <i class="bi bi-search"></i>
+            </a>
+          </li>
+          <!-- End Search Icon-->
+<!-- 
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+              <i class="bi bi-bell"></i>
+              <span class="badge bg-primary badge-number">4</span> </a>
+
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications"
+            >
+              <li class="dropdown-header">
+                You have 4 new notifications
+                <a href="#"
+                  ><span class="badge rounded-pill bg-primary p-2 ms-2"
+                    >View all</span
+                  ></a
+                >
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-exclamation-circle text-warning"></i>
+                <div>
+                  <h4>Lorem Ipsum</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>30 min. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-x-circle text-danger"></i>
+                <div>
+                  <h4>Atque rerum nesciunt</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>1 hr. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-check-circle text-success"></i>
+                <div>
+                  <h4>Sit rerum fuga</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>2 hrs. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-info-circle text-primary"></i>
+                <div>
+                  <h4>Dicta reprehenderit</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>4 hrs. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li class="dropdown-footer">
+                <a href="#">Show all notifications</a>
+              </li>
+            </ul>
+          </li> -->
+          <!-- End Notification Nav -->
+
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+              <i class="bi bi-chat-left-text"></i>
+              <span class="badge bg-success badge-number">3</span> </a
+            >
+
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages"
+            >
+              <li class="dropdown-header">
+                You have 3 new messages
+                <a href="#"
+                  ><span class="badge rounded-pill bg-primary p-2 ms-2"
+                    >View all</span
+                  ></a
+                >
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="message-item">
+                <a href="#">
+                  <img
+                    src="assets/img/messages-1.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <div>
+                    <h4>Maria Hudson</h4>
+                    <p>
+                      Velit asperiores et ducimus soluta repudiandae labore
+                      officia est ut...
+                    </p>
+                    <p>4 hrs. ago</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="message-item">
+                <a href="#">
+                  <img
+                    src="assets/img/messages-2.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <div>
+                    <h4>Anna Nelson</h4>
+                    <p>
+                      Velit asperiores et ducimus soluta repudiandae labore
+                      officia est ut...
+                    </p>
+                    <p>6 hrs. ago</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="message-item">
+                <a href="#">
+                  <img
+                    src="assets/img/messages-3.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <div>
+                    <h4>David Muldon</h4>
+                    <p>
+                      Velit asperiores et ducimus soluta repudiandae labore
+                      officia est ut...
+                    </p>
+                    <p>8 hrs. ago</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="dropdown-footer">
+                <a href="#">Show all messages</a>
+              </li>
+            </ul>
+          </li> -->
+          <!-- End Messages Nav -->
+
+          <li class="nav-item dropdown pe-3">
+            <a
+              class="nav-link nav-profile d-flex align-items-center pe-0"
+              href="#"
+              data-bs-toggle="dropdown"
+            >
+              <img
+                src="assets/img/profile-img.jpg"
+                alt="Profile"
+                class="rounded-circle"
+              />
+              <span class="d-none d-md-block dropdown-toggle ps-2 nameChange"
+                ></span
+              > </a
+            ><!-- End Profile Iamge Icon -->
+
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile"
+            >
+              <li class="dropdown-header">
+                <h6 class="nameChangeTwo">Jenil Dhorajiya</h6>
+                <span class="desgChange">Intern</span>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="users-profile.html"
+                >
+                  <i class="bi bi-person"></i>
+                  <span>My Profile</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="users-profile.html"
+                >
+                  <i class="bi bi-gear"></i>
+                  <span>Account Settings</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="pages-help.html" target="_blank"
+                >
+                  <i class="bi bi-question-circle"></i>
+                  <span>Need Help?</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="profile-details.html">
+                  <i class="bi bi-box-arrow-right"></i>
+                  <span>Log Out</span>
+                </a>
+              </li>
+            </ul>
+            <!-- End Profile Dropdown Items -->
+          </li>
+          <!-- End Profile Nav -->
+        </ul>
+      </nav>
+      <!-- End Icons Navigation -->
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+      <ul class="sidebar-nav" id="sidebar-nav">
+        <!-- <li class="nav-item">
+          <a class="nav-link collapsed" href="index.html">
+            <i class="bi bi-grid"></i>
+            <span>Dashboard</span>
+          </a>
+        </li> -->
+        <!-- End Dashboard Nav -->
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="emp-master.html">
+            <i class="bi bi-card-list"></i>
+            <span>Employee Master</span>
+          </a>
+        </li>
+        <!-- Employee Master -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="ctc-master.html">
+            <i class="bi bi-card-list"></i>
+            <span>CTC Master</span>
+          </a>
+        </li>
+        <!-- CTC Master -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="attendance-master.html">
+            <i class="bi bi-card-list"></i>
+            <span>Attendance Master</span>
+          </a>
+        </li>
+        <!-- Attendance Master -->
+
+        <li class="nav-item">
+          <a class="nav-link" href="payroll-master.html">
+            <i class="bi bi-card-list"></i>
+            <span>Payroll Master</span>
+          </a>
+        </li>
+        <!-- Payroll Master -->
+        <!-- <li class="nav-item">
+            <a class="nav-link collapsed" href="year-master.html">
+              <i class="bi bi-card-list"></i>
+              <span>Year Master</span>
+            </a>
+          </li> -->
+          <!-- Year Master -->
+
+
+        <li class="nav-heading">Pages</li>
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="users-profile.html">
+            <i class="bi bi-person"></i>
+            <span>Profile</span>
+          </a>
+        </li>
+        <!-- End Profile Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="pages-register.html">
+            <i class="bi bi-card-list"></i>
+            <span>Register</span>
+          </a>
+        </li>
+        <!-- End Register Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="pages-login.html">
+            <i class="bi bi-box-arrow-in-right"></i>
+            <span>Login</span>
+          </a>
+        </li>
+        <!-- End Login Page Nav -->
+
+    
+      </ul>
+    </aside>
+    <!-- End Sidebar-->
+
+    <main id="main" class="main">
+      <div class="pagetitle">
+        <h1>Payroll Master</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+           
+            <li class="breadcrumb-item active">Payroll Master</li>
+          </ol>
+        </nav>
+      </div>
+      <!-- End Page Title -->
+
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Payroll Information</h5>
+
+          <!-- Multi Columns Form -->
+          <form class="row g-3" id="payroll-master" action="" method="POST">
+            
+            <div class="col-md-6">
+              <label for="inputMonthYear" class="form-label">Month-Year</label>
+              <input type="text" class="form-control" id="inputMonthYear" name="inputMonthYear" required>
+            </div>
+            <div class="col-md-6">
+              <label for="inputEmpCode" class="form-label">Emp Code</label>
+              <input type="number" class="form-control" id="inputEmpCode" name="inputEmpCode" required>
+            </div>
+            <div class="col-12">
+              <label for="inputSalaryPeriod" class="form-label">Total Salary Period</label>
+              <input type="number" class="form-control" id="inputSalaryPeriod" name="inputSalaryPeriod" required>
+            </div>
+            <div class="text-center">
+              <button type="button" class="btn btn-primary" id="calculate-btn">Calculate</button>
+            </div>
+            <div class="col-md-6">
+              <label for="inputPayableDays" class="form-label">Payable Days</label>
+              <input type="number" class="form-control" id="inputPayableDays" name="inputPayableDays" readonly>
+            </div>
+            <div class="col-md-6">
+                <label for="inputLop" class="form-label">LOP</label>
+                <input type="number" class="form-control" id="inputLop" name="inputLop" readonly>
+            </div>
+            <div class="col-md-6">
+              <label for="inputEarnings" class="form-label">Total Earnings</label>
+              <input type="number" class="form-control" id="inputEarnings" name="inputEarnings" readonly>
+            </div>
+            <div class="col-md-6">
+            <label for="inputDeductions" class="form-label">Total Deductions</label>
+            <input type="number" class="form-control" id="inputDeductions" name="inputDeductions" readonly>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary" id="submit-btn" disabled>Submit</button>
+              <button type="reset" class="btn btn-secondary">Reset</button>
+            </div>
+             <!--submission success start-->
+             <div id="success-message" class="alert alert-success p-2 text-center" role="alert">Submission Successful</div>
+          </form><!-- End Multi Columns Form -->
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- table info -->
+    <table class="table" id="dataTable">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Month-Year</th>
+          <th scope="col">Emp Code</th>
+          <th scope="col">Name</th>
+          <th scope="col">Department</th>
+          <th scope="col">Designation</th>
+          <th scope="col">Monthly Ctc</th>
+          <th scope="col">Earnings</th>
+          <th scope="col">Deductions</th>
+          <th scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+      <div class="copyright">
+        &copy; Copyright <strong><span>PayBiz</span></strong
+        >. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- firebase start -->
+
+    <script type="module">
+
+      const empCode = localStorage.getItem("empCode");
+
+      if (!empCode) {
+        console.error("No empCode found in local storage.");
+      }
+
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+      import { getDatabase, ref, get, set } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
+  
+      // Initialize Firebase
+      import firebaseConfig from './firebaseConfig.js';
+
+      const app = initializeApp(firebaseConfig);
+  
+      // Function to calculate payable days, LOP, total earnings, and total deductions
+      function calculate() {
+          const monthYear = document.getElementById('inputMonthYear').value;
+          const empCode = document.getElementById('inputEmpCode').value;
+          const totalSalaryPeriod = parseInt(document.getElementById('inputSalaryPeriod').value);
+          const submitButton = document.getElementById('submit-btn');
+  
+          const database = getDatabase();
+          const attendanceRef = ref(database, 'attendance/' + monthYear + '/' + empCode + '/leaves');
+          const ctcRef = ref(database, 'ctc/' + empCode + '/monthlyCtc');
+  
+          Promise.all([get(attendanceRef), get(ctcRef)])
+              .then((snapshots) => {
+                  const leaves = snapshots[0].val() || 0; // If leaves are not available, consider it as 0
+                  const monthlyCtc = snapshots[1].val();
+  
+                  // Calculate payable days
+                  const payableDays = leaves === 0 ? totalSalaryPeriod : totalSalaryPeriod - leaves;
+                  document.getElementById('inputPayableDays').value = payableDays;
+  
+                  // Calculate LOP
+                  const lop = totalSalaryPeriod - payableDays;
+                  document.getElementById('inputLop').value = lop;
+  
+                  // Calculate total earnings
+                  const totalEarnings = (monthlyCtc / totalSalaryPeriod) * payableDays;
+                  document.getElementById('inputEarnings').value = totalEarnings.toFixed(2);
+  
+                  // Calculate total deductions
+                  const totalDeductions = monthlyCtc - totalEarnings;
+                  document.getElementById('inputDeductions').value = totalDeductions.toFixed(2);
+
+                  submitButton.removeAttribute('disabled');
+              })
+              .catch((error) => {
+                  console.error('Error fetching data:', error);
+              });
+
+      }
+  
+      // Event listener for the Calculate button
+      document.getElementById('calculate-btn').addEventListener('click', calculate);
+
+       // Function to handle form submission
+    function submitForm() {
+        const monthYear = document.getElementById('inputMonthYear').value;
+        const empCode = document.getElementById('inputEmpCode').value;
+        const totalSalaryPeriod = parseInt(document.getElementById('inputSalaryPeriod').value);
+        const payableDays = parseInt(document.getElementById('inputPayableDays').value);
+        const lop = parseInt(document.getElementById('inputLop').value);
+        const earnings = parseFloat(document.getElementById('inputEarnings').value);
+        const deductions = parseFloat(document.getElementById('inputDeductions').value);
+        const submitButton = document.getElementById('submit-btn');
+
+        const database = getDatabase();
+        const payrollRef = ref(database, `payroll/${monthYear}/${empCode}`);
+        const empRef = ref(database, `emp/${empCode}`);
+        const ctcRef = ref(database, `ctc/${empCode}`);
+
+        Promise.all([get(empRef), get(ctcRef)])
+        .then((snapshots) => {
+            const empData = snapshots[0].val();
+            const ctcData = snapshots[1].val();
+
+            // Populate table with retrieved data
+            const tableBody = document.querySelector('#dataTable tbody');
+            const newRow = tableBody.insertRow();
+            const cellIndex = newRow.insertCell(0);
+            const cellMonthYear = newRow.insertCell(1);
+            const cellEmpCode = newRow.insertCell(2);
+            const cellName = newRow.insertCell(3);
+            const cellDepartment = newRow.insertCell(4);
+            const cellDesignation = newRow.insertCell(5);
+            const cellMonthlyCtc = newRow.insertCell(6);
+            const cellEarnings = newRow.insertCell(7);
+            const cellDeductions = newRow.insertCell(8);
+
+            // Auto-incrementing #
+            cellIndex.textContent = tableBody.rows.length;
+
+            // Populate other cells
+            cellMonthYear.textContent = monthYear;
+            cellEmpCode.textContent = empCode;
+            cellName.textContent = empData.name || '';
+            cellDepartment.textContent = empData.dept || '';
+            cellDesignation.textContent = empData.desg || '';
+            cellMonthlyCtc.textContent = ctcData.monthlyCtc || '';
+            cellEarnings.textContent = earnings;
+            cellDeductions.textContent = deductions;
+
+            // Store data in Firebase
+            set(payrollRef, {
+                totalSalaryPeriod: totalSalaryPeriod,
+                payableDays: payableDays,
+                lop: lop,
+                earnings: earnings,
+                deductions: deductions
+            })
+            .then(() => {
+                // Data updation validation message
+                document.querySelector('#success-message').textContent = "Submission Successful";
+                document.querySelector('#success-message').style.display = 'block';
+                setTimeout(function () {
+                    document.querySelector('#success-message').style.display = 'none';
+                    document.querySelector('#success-message').textContent = "";
+                }, 4000);
+                // Reset form and editKey after update
+                document.getElementById('payroll-master').reset();
+                submitButton.setAttribute('disabled', 'disabled');
+            })
+            .catch((error) => {
+                console.error("Error storing data in Firebase:", error);
+                // Handle error and show appropriate message if needed
+            });
+        })
+        .catch((error) => {
+            console.error("Error fetching data from Firebase:", error);
+            // Handle error and show appropriate message if needed
+        });
+    }
+
+    // Event listener for form submission
+    document.getElementById('payroll-master').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+        submitForm(); // Call the function to handle form submission
+    });
+
+
+
+
+    // Function to populate the table with data from Firebase
+function populateTable() {
+    const database = getDatabase();
+    const payrollRef = ref(database, `payroll`);
+    
+    get(payrollRef)
+    .then((snapshot) => {
+        const payrollData = snapshot.val() || {};
+
+        // Populate table with retrieved data
+        const tableBody = document.querySelector('#dataTable tbody');
+        tableBody.innerHTML = ''; // Clear existing table content
+        
+        let index = 1;
+        for (const monthYear in payrollData) {
+            for (const empCode in payrollData[monthYear]) {
+                const payroll = payrollData[monthYear][empCode];
+                const newRow = tableBody.insertRow();
+                const cells = [
+                    index++,
+                    monthYear,
+                    empCode,
+                    '', // Name (to be populated later)
+                    '', // Department (to be populated later)
+                    '', // Designation (to be populated later)
+                    '', // Monthly Ctc (to be populated later)
+                    payroll.earnings || '',
+                    payroll.deductions,
+                    ''
+                ];
+                cells.forEach((cellData, cellIndex) => {
+                    const cell = newRow.insertCell(cellIndex);
+                    cell.textContent = cellData;
+                });
+
+
+                // Print button
+                const printButton = document.createElement('button');
+                printButton.textContent = 'Print';
+                printButton.classList.add('btn', 'btn-primary','btn-print'); // Add a class for event delegation
+                // Attach event listener to the print button
+                printButton.addEventListener('click', function() {
+                    // Retrieve the row associated with the print button
+                    const row = this.closest('tr');
+                    if (row) {
+                        // Call the printPayslip function with the row data
+                        printPayslip(row);
+                    }
+                });
+                // Append print button to action cell
+                const actionCell = newRow.cells[9];
+                actionCell.appendChild(printButton);
+
+                // Add space between the buttons
+                actionCell.appendChild(document.createTextNode(' '));
+
+                // // Pay button
+                // const payButton = document.createElement('button');
+                // payButton.textContent = 'Pay';
+                // payButton.classList.add('btn', 'btn-primary','btn-pay'); // Add a class for event delegation
+                // // Attach event listener to the pay button
+                // payButton.addEventListener('click', function() {
+                // });
+                // // Append print button to action cell
+                // actionCell.appendChild(payButton);
+
+                // Fetch employee data from Firebase
+                const empRef = ref(database, `emp/${empCode}`);
+                get(empRef)
+                .then((snapshot) => {
+                    const empData = snapshot.val() || {};
+                    newRow.cells[3].textContent = empData.name || '';
+                    newRow.cells[4].textContent = empData.dept || '';
+                    newRow.cells[5].textContent = empData.desg || '';
+                })
+                .catch((error) => {
+                    console.error("Error fetching employee data:", error);
+                });
+
+                // Fetch monthly Ctc data from Firebase
+                const ctcRef = ref(database, `ctc/${empCode}`);
+                get(ctcRef)
+                .then((snapshot) => {
+                    const ctcData = snapshot.val() || {};
+                    newRow.cells[6].textContent = ctcData.monthlyCtc || '';
+                })
+                .catch((error) => {
+                    console.error("Error fetching monthly Ctc data:", error);
+                });
+            }
+        }
+    })
+    .catch((error) => {
+        console.error("Error fetching payroll data:", error);
+    });
+}
+
+
+// Function to handle printing of payslip
+function printPayslip(row) {
+    // Get the relevant data from the clicked row
+    const period = row.cells[1].textContent;
+    const empCode = row.cells[2].textContent;
+    const name = row.cells[3].textContent;
+    const department = row.cells[4].textContent;
+    const designation = row.cells[5].textContent;
+    const monthlyCtc = row.cells[6].textContent;
+    const earnings = row.cells[7].textContent;
+    const deductions = row.cells[8].textContent;
+
+    // Create a div element to hold the payslip content
+    const payslipDiv = document.createElement('div');
+
+    // Populate the div with the payslip content
+    payslipDiv.innerHTML = `
+        <h2>Payslip for Employee Code: ${empCode}</h2>
+        <p><strong>Period:</strong> ${period}</p>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Department:</strong> ${department}</p>
+        <p><strong>Designation:</strong> ${designation}</p>
+        <p><strong>Monthly Ctc:</strong> ${monthlyCtc}</p>
+        <p><strong>Earnings:</strong> ${earnings}</p>
+        <p><strong>Deductions:</strong> ${deductions}</p>
+    `;
+
+    // Style the payslip div
+    payslipDiv.style.position = 'fixed';
+    payslipDiv.style.top = '0';
+    payslipDiv.style.left = '0';
+    payslipDiv.style.width = '100%';
+    payslipDiv.style.height = '100%';
+    payslipDiv.style.backgroundColor = '#fff'; // Set background color to white
+    payslipDiv.style.zIndex = '9999'; // Set a high z-index to ensure it overlays other content
+    payslipDiv.style.padding = '20px';
+    payslipDiv.style.fontFamily = 'Arial, sans-serif'; // Use a sans-serif font for readability
+    payslipDiv.style.fontSize = '14px'; // Set font size
+    payslipDiv.style.border = '2px solid #ccc'; // Add a light gray border
+    payslipDiv.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)'; // Add a subtle shadow
+
+    // Append the payslip div to the body
+    document.body.appendChild(payslipDiv);
+
+    // Print the payslip content
+    window.print();
+
+    // Remove the payslip div after printing
+    payslipDiv.remove();
+}
+
+//change navbar name
+const navDb = getDatabase();
+const navRef = ref(navDb, `register/${empCode}`);
+  get(navRef)
+    .then((snapshot) => {
+      if (snapshot.exists()) {
+        const userData = snapshot.val();
+        document.querySelector('.nameChange').textContent = userData.name;
+        document.querySelector('.nameChangeTwo').textContent = userData.name;
+        document.querySelector('.desgChange').textContent = userData.desg;
+      } else {
+        console.error("No data found for empCode:", empCode);
+      }
+    })
+    .catch((error) => {
+      console.error("Error fetching user data:", error);
+    });
+
+
+
+// Call populateTable function when the page loads
+window.addEventListener('load', populateTable);
+
+</script>
+  
+
+    
+  
+    
+    <!-- firebase end -->
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/chart.js/chart.umd.js"></script>
+    <script src="assets/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/vendor/quill/quill.min.js"></script>
+    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
